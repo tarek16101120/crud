@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import home from "./components/home/home";
-import read from "./components/read/read";
-import notfound from "./components/notfound/notfound";
-import create from "./components/create/create";
+import Home from "./components/home/home";
+import Read from "./components/read/read";
+import NotFound from "./components/notfound/notfound";
+import Create from "./components/create/create";
 import { UserProvider } from "./components/usercontext/usercontext";
-import delete from "./components/delete/delete";
-import update from "./components/update/update";
+import Delete from "./components/delete/delete";
+import Update from "./components/update/update";
 
 function App() {
   return (
@@ -24,8 +24,9 @@ function App() {
               <Update />
             </Route>
             <Route path="/delete/:id">
-              <Delete />
+              <Delete/>
             </Route>
+
             <Route exact path="/">
               <Home />
             </Route>
